@@ -84,8 +84,7 @@
         .about_all_con {
             width: 1170px;
             height: auto;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
 
             /* padding-top: 168px; */
         }
@@ -94,9 +93,9 @@
 
             font-size: 40px;
             float: left;
-            position: absolute;
             line-height: 0.7;
             display: inline;
+            padding-bottom: 35px;
 
         }
 
@@ -122,34 +121,29 @@
         }
 
         .w3-bar {
-            /* float: right; */
+            float: right;
             display: block;
             padding-bottom: 65px;
+            width: 730px;
 
 
         }
 
         #button_1 {
-            width: 240px;
             background-image: url(img/content/p1.jpg);
-
         }
 
         #button_2 {
-            width: 240px;
             background-image: url(img/content/p2.jpg);
-
         }
 
         #button_3 {
-            width: 240px;
             background-image: url(img/content/p3.jpg);
-
         }
 
         .con_photo {
-            width: 432px;
-            height: 882px;
+            width: 384px;
+            height: 784px;
             background-image: url(/img/content/award-L.jpg);
             background-position: center;
             background-size: cover;
@@ -171,8 +165,7 @@
         }
 
         .con_text_con_p {
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
 
         }
 
@@ -187,8 +180,7 @@
             }
 
             .con_left {
-                margin-left: auto;
-                margin-right: auto;
+                margin: 0 auto;
                 float: none;
 
             }
@@ -296,19 +288,21 @@
             }
 
             .w3-bar {
-                display: flex;
+                float: none;
+                width: 100%;
                 justify-content: center;
                 padding: 0 0;
             }
-            .w3-button{
+            .w3-bar .w3-button{
+                width: 33.3%;
                 background-color: rgba(75, 75, 75, 0.5);
             }
 
-            .w3-bar-item {
+            .w3-bar .w3-bar-item {
+                width: 33.3%;
                 text-align: center;
                 background-image: none;
                 padding: 0;
-                /* width: 40px; */
                 height: 50px;
 
             }
@@ -405,18 +399,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="con_right">
+                <div class="con_right" src="/img/content/con2.png">
                     <h1 class="con_btn_title">環境介紹</h1>
                     <p>
                         　　金門風大、日照強，卻是做麵線的最佳條件。加上水質好，也是做麵線的理想環境。一把把做好的麵線讓大風吹到半乾，打成８字結，就可以在太陽底下自然曬到乾。金門的手工麵線鹹味淡，風味好，遊客來到金門就算不吃碗麵線，也一定要帶包麵線回家做伴手禮。
                     </p>
                 </div>
             </div>
-            <div id="maja" class="botton" style="display:none">
+            <div id="maja" class="botton" src="/img/content/con1.jpg" style="display:none">
                 <div class="con_left">
                     <div class="con_photo"></div>
                     <div class="con_text">
-                        <!-- <div class="con_text_title">馬家簡介</div>      -->
                     </div>
                 </div>
                 <div class="con_right">
@@ -427,7 +420,7 @@
                 </div>
             </div>
 
-            <div id="culture" class="botton" style="display:none">
+            <div id="culture" class="botton" src="/img/content/con2.jpg"  style="display:none">
                 <div class="con_left">
                     <div class="con_photo"></div>
                     <div class="con_text">
