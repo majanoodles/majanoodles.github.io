@@ -150,7 +150,7 @@
         .city_photo {
             width: 432px;
             height: 882px;
-            background-image: url("/img/content/award-L.jpg");
+            background-image: url(/img/content/award-L.jpg);
             background-position: center;
             background-size: cover;
             margin-top: 5px;
@@ -224,11 +224,10 @@
 /* NAVBAR */
             #navbar_all{
                 padding: 0;
-                padding-left: 15px; 
             }
             #navbar_logo img{
-            width: 240px;
-            height: 50px;
+            width: 210px;
+            height: 44px;
             }
             #navbar{
                 height: 100px;
@@ -252,15 +251,21 @@
                 transition: 0.5s;
             }
 /* CONTENT */
+        .about_all {
+            padding: 0;
+        }
         .about_all_con {
                 width: 100%
-
             }
-
+            .about_title {
+            display: none;
+            }
             .city_photo {
                 display: block;
                 width: 100%;
-                max-height: 500px;
+                max-height: 180px;
+                background-image: url("/img/content/award-R.jpg");
+                background-image: cover;
                 padding: 0;
                 margin: 0;
             }
@@ -293,6 +298,9 @@
                 display: flex;
                 justify-content: center;
                 padding: 0 0;
+            }
+            .w3-button{
+                background-color: rgba(75, 75, 75, 0.5);
             }
 
             .w3-bar-item {
