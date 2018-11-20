@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
     <style>
         *{
             font-family: Microsoft JhengHei;
@@ -73,7 +75,7 @@
 /* CONTENT */
     .content_all {
             max-width: 100vw;
-            height: 1080px;
+            height: 100vh;
             position: relative;
             /* 间距 */
             padding-top: 100px;
@@ -159,6 +161,108 @@
         p{
             font-size: 18px;
         }
+/* all__phone_maketomap */
+        #all_maketomap{
+            display: none;
+        }
+/* all_computer_make */
+/* all_computer-show */
+.all_computer_show_all{
+width: 100vw;
+height: 40vh;
+}
+.all_show_computer {
+            width: 100%;
+
+        }
+
+        .name_computer {
+            font-size: 25px;
+            margin-bottom: 17px;
+            margin-left: 15px;
+        }
+
+        .img_computer {
+            width: 212px;
+            height: 148px;
+            margin-top: 8px;
+            left: 16px;
+            margin-bottom: 15px;
+
+        }
+
+        .tab-pane {
+            width: 212px;
+            display: flex;
+
+        }
+
+        .nav-link {
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .inf {
+            font-size: 10px;
+            margin-left: 15px;
+
+        }
+
+        .swiper-container {
+            width: 600px;
+            height: 300px;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            /* width: 375px;
+      height: 375px; */
+
+
+        }
+
+        .swiper-slide {
+
+            text-align: center;
+            font-size: 18px;
+            /* background: rgb(161, 161, 161); */
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .icon {
+            width: 26px;
+
+        }
+
+
 @media screen and (max-width: 1170px) {
             .content_all_con {
                 width: 720px;
@@ -221,9 +325,10 @@
 /* CONTENT */
         .content_all {
             padding: 0;
+            height: auto;
         }
         .content_all_con {
-                width: 100%
+                width: 100%;
             }
             .content_title {
             display: none;
@@ -253,6 +358,7 @@
             .con_right {
                 width: 100%;
                 padding: 10px;
+                
             }
             .w3-bar {
                 float: none;
@@ -283,9 +389,284 @@
             h1 {
                 margin: 0;
             }
-}
-        </style>
 
+/* all_maketomap */
+#all_maketomap{
+      margin: 0 auto;
+      width: 375px;
+      display: block;
+
+    }
+    
+    .all_food_phone {
+      width: 375px;
+    
+      background-image: url(img/p0-food.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .all_make_phone {
+      width: 375px;
+      background-image: url(img/p0-make.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .all_show_phone {
+      width: 375px;
+
+    }
+
+
+    .all_map_phone {
+      width: 375px;
+      background-image: url(img/p0-map.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .name_phone {
+      font-size: 25px;
+      margin-bottom: 17px;
+      margin-left: 15px;
+    }
+
+    .img_phone {
+      width: 212px;
+      height: 148px;
+      margin-top: 8px;
+      left: 16px;
+      margin-bottom: 15px;
+
+    }
+
+    .tab-pane {
+      width: 212px;
+      display: flex;
+
+    }
+
+    .nav-link {
+
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .inf {
+      font-size: 10px;
+      margin-left: 15px;
+
+    }
+
+    .swiper-container {
+      width: 600px;
+      height: 300px;
+    }
+
+    html,body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 375px;
+      height: 375px;
+
+
+    }
+
+    .swiper-slide {
+
+      text-align: center;
+      font-size: 18px;
+      /* background: rgb(161, 161, 161); */
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .icon {
+      width: 26px;
+
+    }
+    #all_computer_make_all{
+        display:none;
+    }
+    #all_computer_show_all{
+        display:none;
+    }
+
+
+}
+/* compuert-make */
+.all_computer_make_all{
+    width: 100vw;
+        height: 100vh;
+}
+.all_computer_make{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-image: url(img/p0.jpg);
+
+    }
+    .all_computer_make_tempo{
+        
+        width: 125px;
+        height: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        top:50%;
+        transform:translateY(-50%);
+        position: relative;
+        transition-duration:0.5s;
+        display:flex;
+        justify-content:space-between;
+        flex-direction:column;
+    }
+
+    .all_computer_make_tempo_t_t{
+        font-size: 25px;
+        display: inline-block;
+        transition-duration:0.5s;
+        text-decoration:none;
+ 
+    }
+   /* .t_t:hover{
+        color:pink;
+        font-size: 30px;
+
+    } */
+    
+    .all_computer_make_detail{
+        width:calc(50% - 110px);
+        display:inline-block;
+        top:40%;
+        transform:translateY(-40%);
+        position: relative;
+        padding-right:61px;
+        background-color: bisque;
+        float: right;
+    }
+    .all_computer_make_world{
+        position:absolute;
+        padding-right:61px;
+        display:none;
+
+    }
+
+    .all_computer_make_photo{
+        display:none;
+        width: 100%; 
+        height: 100%; 
+        position: absolute;
+
+    }
+    .all_computer_make_dark{
+        width: 100%;
+        height: 440px;
+        background-color: rgba(0, 0, 0, 0.411);
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        
+    }
+   
+
+
+
+
+        </style>
+    <!-- ---conputer-make -->
+
+    <script type="text/javascript">
+
+        function showImg_1() {
+            document.getElementById("d_1").style.display = 'block';
+            document.getElementById("bg_1").style.display = 'block';
+        }
+        function hideImg_1() {
+            document.getElementById("d_1").style.display = 'none';
+            document.getElementById("bg_1").style.display = 'none';
+        }
+        function showImg_2() {
+            document.getElementById("d_2").style.display = 'block';
+            document.getElementById("bg_2").style.display = 'block';
+        }
+        function hideImg_2() {
+            document.getElementById("d_2").style.display = 'none';
+            document.getElementById("bg_2").style.display = 'none';
+        }
+        function showImg_3() {
+            document.getElementById("d_3").style.display = 'block';
+            document.getElementById("bg_3").style.display = 'block';
+        }
+        function hideImg_3() {
+            document.getElementById("d_3").style.display = 'none';
+            document.getElementById("bg_3").style.display = 'none';
+        }
+        function showImg_4() {
+            document.getElementById("d_4").style.display = 'block';
+            document.getElementById("bg_4").style.display = 'block';
+        }
+        function hideImg_4() {
+            document.getElementById("d_4").style.display = 'none';
+            document.getElementById("bg_4").style.display = 'none';
+        }
+        function showImg_5() {
+            document.getElementById("d_5").style.display = 'block';
+            document.getElementById("bg_5").style.display = 'block';
+        }
+        function hideImg_5() {
+            document.getElementById("d_5").style.display = 'none';
+            document.getElementById("bg_5").style.display = 'none';
+        }
+        function showImg_6() {
+            document.getElementById("d_6").style.display = 'block';
+            document.getElementById("bg_6").style.display = 'block';
+        }
+        function hideImg_6() {
+            document.getElementById("d_6").style.display = 'none';
+            document.getElementById("bg_6").style.display = 'none';
+        }
+        function showImg_7() {
+            document.getElementById("d_7").style.display = 'block';
+            document.getElementById("bg_7").style.display = 'block';
+        }
+        function hideImg_7() {
+            document.getElementById("d_7").style.display = 'none';
+            document.getElementById("bg_7").style.display = 'none';
+        }
+        function showImg_8() {
+            document.getElementById("d_8").style.display = 'block';
+            document.getElementById("bg_8").style.display = 'block';
+        }
+        function hideImg_8() {
+            document.getElementById("d_8").style.display = 'none';
+            document.getElementById("bg_8").style.display = 'none';
+        }
+
+    </script>
 </head>
 
 <body>
@@ -400,13 +781,407 @@
             </div>
 
         </div>
+    </div>
+
+    <!-- 制作面线至地图 -->
+
+    <div class="all_maketomap" id="all_maketomap">
+        <!-- 麵線製作phone-start -->
+        <div class="all_make_phone">
+            <div class="name_phone">麵線製作</div>
+
+            <div class="row">
+                <div class="t_t" style="width: 160px;padding-left: 15px;padding-right: 0;">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-profile-tab1" data-toggle="pill" href="#v-pills-profile1"
+                            role="tab" aria-controls="v-pills-profile1" aria-selected="false">揉麵</a>
+                        <a class="nav-link" id="v-pills-profile-tab2" data-toggle="pill" href="#v-pills-profile2" role="tab"
+                            aria-controls="v-pills-profile2" aria-selected="false">桿麵</a>
+                        <a class="nav-link" id="v-pills-messages-tab3" data-toggle="pill" href="#v-pills-messages3"
+                            role="tab" aria-controls="v-pills-messages3" aria-selected="false">發酵</a>
+                        <a class="nav-link" id="v-pills-settings-tab4" data-toggle="pill" href="#v-pills-settings4"
+                            role="tab" aria-controls="v-pills-settings4" aria-selected="false">晾麵</a>
+                        <a class="nav-link" id="v-pills-settings-tab5" data-toggle="pill" href="#v-pills-settings5"
+                            role="tab" aria-controls="v-pills-settings5" aria-selected="false">醒麵</a>
+                        <a class="nav-link" id="v-pills-profile-tab6" data-toggle="pill" href="#v-pills-profile6" role="tab"
+                            aria-controls="v-pills-profile6" aria-selected="false">手工成型</a>
+                        <a class="nav-link" id="v-pills-messages-tab7" data-toggle="pill" href="#v-pills-messages7"
+                            role="tab" aria-controls="v-pills-messages7" aria-selected="false">曝曬</a>
+                        <a class="nav-link" id="v-pills-settings-tab8" data-toggle="pill" href="#v-pills-settings8"
+                            role="tab" aria-controls="v-pills-settings8" aria-selected="false">品管包裝</a>
+
+                    </div>
+                </div>
+                <div class="col-7" style="padding: 0;">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">
+                            <img class="img_phone" src="img-make/p1.jpg" alt="photo">
+                            <br> 高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)。
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2">
+                            <img class="img_phone" src="img-make/p2.jpg" alt="photo">
+                            <br> 為了增加麵線的口感，重覆多次壓延麵片可增加麵線食用時的口感。
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages3" role="tabpanel" aria-labelledby="v-pills-messages-tab3">
+                            <img class="img_phone" src="img-make/p3.jpg" alt="photo">
+                            <br> 麵粉有自然的筋性，每一步驟中間都要有時間發酵(行筋)才能如老麵團的Q感，時間的長短，視天氣的乾濕度來作決定，用袋子蓋上靜置如睡眠狀態。
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings4" role="tabpanel" aria-labelledby="v-pills-settings-tab4">
+                            <img class="img_phone" src="img-make/p4.jpg" alt="photo">
+                            <br> 麵線拉成細線後上晾架，在大太陽下晾半乾，經由風再慢慢的吹後，老經驗的師父用手觸摸半乾再收線。</div>
+                        <div class="tab-pane fade" id="v-pills-settings5" role="tabpanel" aria-labelledby="v-pills-settings-tab5">
+                            <img class="img_phone" src="img-make/p5.jpg" alt="photo">
+                            <br> 放入桶子內麵線，經由二次的休眠發酵醒麵，方可成型。
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile6" role="tabpanel" aria-labelledby="v-pills-profile-tab6">
+                            <img class="img_phone" src="img-make/p6.jpg" alt="photo">
+                            <br> 由有經驗的師父，細分等份，一把1人份，折成8字型之麵線形狀，取吉祥長壽之意。
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages7" role="tabpanel" aria-labelledby="v-pills-messages-tab7">
+                            <img class="img_phone" src="img-make/p7.jpg" alt="photo">
+                            <br> 晴天約1天可全乾，若陰天2-3天，中午需要麵線上下翻面，才能完全曬乾(因不加防腐劑)是一種靠天吃飯，辛苦的行業。
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings8" role="tabpanel" aria-labelledby="v-pills-settings-tab8">
+                            <img class="img_phone" src="img-make/p8.jpg" alt="photo">
+                            <br> 手工遂一排列包裝(機器沒辦法)，檢視不良品，以達到手工麵線不但Q，而且很美觀。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 麵線製作-phone-stop -->
+
+        <!-- 產品介紹-phone-start -->
+        <div class="all_show_phone">
+            <div class="name_phone" style="margin-bottom: 0;">產品介紹</div>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block w-50 h-50 rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block w-50 h-50 rounded-circle m-1" src="img-show/show-p2.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block w-50 h-50 rounded-circle m-1" src="img-show/show-p3.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+
+
+
+            <!-- 產品介紹-phone-stop -->
+
+            <!-- 料理美食-phone-start -->
+            <div class="all_food_phone">
+                <div class="name_phone">料理美食</div>
+
+                <div class="row">
+
+                    <div class="t_t" style="width: 160px;padding-left: 15px;padding-right: 0;">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <a class="nav-link active" id="v-pills-profile-tab1-1" data-toggle="pill" href="#v-pills-profile1-1"
+                                role="tab" aria-controls="v-pills-profile1-1" aria-selected="false">海鮮麵線</a>
+                            <a class="nav-link" id="v-pills-profile-tab2-2" data-toggle="pill" href="#v-pills-profile2-2"
+                                role="tab" aria-controls="v-pills-profile2-2" aria-selected="false">紅燒豬腳麵線</a>
+                            <a class="nav-link" id="v-pills-messages-tab3-3" data-toggle="pill" href="#v-pills-messages3-3"
+                                role="tab" aria-controls="v-pills-messages3-3" aria-selected="false">麻油虱目魚麵線</a>
+                            <a class="nav-link" id="v-pills-settings-tab4-4" data-toggle="pill" href="#v-pills-settings4-4"
+                                role="tab" aria-controls="v-pills-settings4-4" aria-selected="false">蚵仔麵線</a>
+                            <a class="nav-link" id="v-pills-settings-tab5-5" data-toggle="pill" href="#v-pills-settings5-5"
+                                role="tab" aria-controls="v-pills-settings5-5" aria-selected="false">麻油雞麵線</a>
+                            <a class="nav-link" id="v-pills-profile-tab6-6" data-toggle="pill" href="#v-pills-profile6-6"
+                                role="tab" aria-controls="v-pills-profile6-6" aria-selected="false">肉燥乾拌麵線</a>
+                            <a class="nav-link" id="v-pills-messages-tab7-7" data-toggle="pill" href="#v-pills-messages7-7"
+                                role="tab" aria-controls="v-pills-messages7-7" aria-selected="false">紅燒牛肉麵線</a>
+                            <a class="nav-link" id="v-pills-settings-tab8-8" data-toggle="pill" href="#v-pills-settings8-8"
+                                role="tab" aria-controls="v-pills-settings8-8" aria-selected="false">酸辣麵線</a>
+                        </div>
+                    </div>
+                    <div class="col-7" style="padding: 0;">
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-profile1-1" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab1-1">
+                                <img class="img_phone" src="img-food/p1.jpg" alt="photo">
+                                <br> 高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)。
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile2-2" role="tabpanel" aria-labelledby="v-pills-profile-tab2-2">
+                                <img class="img_phone" src="img-food/p2.jpg" alt="photo">
+                                <br> 為了增加麵線的口感，重覆多次壓延麵片可增加麵線食用時的口感。
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages3-3" role="tabpanel" aria-labelledby="v-pills-messages-tab3-3">
+                                <img class="img_phone" src="img-food/p3.jpg" alt="photo">
+                                <br> 麵粉有自然的筋性，每一步驟中間都要有時間發酵(行筋)才能如老麵團的Q感，時間的長短，視天氣的乾濕度來作決定，用袋子蓋上靜置如睡眠狀態。
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings4-4" role="tabpanel" aria-labelledby="v-pills-settings-tab4-4">
+                                <img class="img_phone" src="img-food/p4.jpg" alt="photo">
+                                <br> 麵線拉成細線後上晾架，在大太陽下晾半乾，經由風再慢慢的吹後，老經驗的師父用手觸摸半乾再收線。</div>
+                            <div class="tab-pane fade" id="v-pills-settings5-5" role="tabpanel" aria-labelledby="v-pills-settings-tab5-5">
+                                <img class="img_phone" src="img-food/p5.jpg" alt="photo">
+                                <br> 放入桶子內麵線，經由二次的休眠發酵醒麵，方可成型。
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile6-6" role="tabpanel" aria-labelledby="v-pills-profile-tab6-6">
+                                <img class="img_phone" src="img-food/p6.jpg" alt="photo">
+                                <br> 由有經驗的師父，細分等份，一把1人份，折成8字型之麵線形狀，取吉祥長壽之意。
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages7-7" role="tabpanel" aria-labelledby="v-pills-messages-tab7-7">
+                                <img class="img_phone" src="img-food/p7.jpg" alt="photo">
+                                <br> 晴天約1天可全乾，若陰天2-3天，中午需要麵線上下翻面，才能完全曬乾(因不加防腐劑)是一種靠天吃飯，辛苦的行業。
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings8-8" role="tabpanel" aria-labelledby="v-pills-settings-tab8-8">
+                                <img class="img_phone" src="img-food/p8.jpg" alt="photo">
+                                <br> 手工遂一排列包裝(機器沒辦法)，檢視不良品，以達到手工麵線不但Q，而且很美觀。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 料理美食-phone-stop-->
+            <!-- 聯絡馬家-phone-star -->
+            <div class="all_map_phone">
+                <div class="name_phone">聯絡馬家</div>
+                <div class="inf">
+                    總　廠：金門縣金寧鄉伯玉路二段159號 <br>
+                    TEL：(082)372295 <br>
+                    9537 FAX:（082)327357<br>
+                    中興店：金門縣金城鎮北門里中興路146巷4號<br>
+                    TEL：(082)324567<br>
+                    郵政劃撥：16173775 馬志亮<br>
+                    E-mail：maja327357@yahoo.com.tw<br>
+                    yahoo拍賣：https://reurl.cc/O0QQD<br>
+                    facebook：https://www.facebook.com/Majanoodles<br>
+
+                    <div class="map" src="https://goo.gl/maps/aNWvYDhSnpT2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.3301317012274!2d118.33369200000001!3d24.439329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf37d08f288bace8!2z6aas5a626bq157ea!5e0!3m2!1szh-TW!2stw!4v1542388671922"
+                            width="345" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- 聯絡馬家-phone-stop -->
+        </div>
+    </div>
+    <!-- 制作-地图-phote-stop -->
+
+    <!-- -cpmpuer-make-- -->
+    <div class="all_computer_make_all" id="all_computer_make_all">
+
+        <div class="all_computer_make">
+            <div class="all_computer_make_dark"></div>
+            <div id="bg_1" class="all_computer_make_photo" style="background-image: url(img/p1.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_2" class="all_computer_make_photo" style="background-image: url(img/p2.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_3" class="all_computer_make_photo" style="background-image: url(img/p3.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_4" class="all_computer_make_photo" style="background-image: url(img/p4.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_5" class="all_computer_make_photo" style="background-image: url(img/p5.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_6" class="all_computer_make_photo" style="background-image: url(img/p6.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_7" class="all_computer_make_photo" style="background-image: url(img/p7.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+            <div id="bg_8" class="all_computer_make_photo" style="background-image: url(img/p8.jpg);">
+                <div class="all_computer_make_dark"></div>
+            </div>
+
+            <!-- <div class="detail"> -->
+            <div class="all_computer_make_detail">
+                <div id="d_1" class="all_computer_make_world">
+                    1高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_2" class="all_computer_make_world">
+                    2高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_3" class="all_computer_make_world">
+                    3高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_4" class="all_computer_make_world">
+                    4高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_5" class="all_computer_make_world">
+                    5高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_6" class="all_computer_make_world">
+                    6高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_7" class="all_computer_make_world">
+                    7高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+                <div id="d_8" class="all_computer_make_world">
+                    8高筋小麥粉加入新鮮食材(如蕃 茄)，少量天然粗鹽(增加Q感)，用機器揉製(早期是用手工)
+                </div>
+            </div>
+
+            <div class="all_computer_make_tempo">
+                <a id="t_1" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_1()"
+                    onmouseover="showImg_1()">揉麵</a>
+                <a id="t_2" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_2()"
+                    onmouseover="showImg_2()">桿麵</a>
+                <a id="t_3" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_3()"
+                    onmouseover="showImg_3()">發酵</a>
+                <a id="t_4" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_4()"
+                    onmouseover="showImg_4()">晾麵</a>
+                <a id="t_5" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_5()"
+                    onmouseover="showImg_5()">醒麵</a>
+                <a id="t_6" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_6()"
+                    onmouseover="showImg_6()">手工成型</a>
+                <a id="t_7" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_7()"
+                    onmouseover="showImg_7()">曝曬</a>
+                <a id="t_8" class="all_computer_make_tempo_t_t" href="javascript:void(0)" onMouseOut="hideImg_8()"
+                    onmouseover="showImg_8()">品管包裝</a>
+            </div>
+        </div>
+    </div>
+
+   <!-- 產品介紹-computer-start -->
+    <div class="all_computer_show_all" id="all_computer_show_all" >
+     
+        <div class="all_show_computer">
+            <div class="name_computer" style="margin-bottom: 0;">產品介紹</div>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p2.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p3.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+                        <!-- 一頁內容-star;可直接複製;  icon圖片名稱為"show-i？.png" ；照片名稱為"/show-p？.jpg"-->
+                        <div class="swiper-slide active d-block d-flex justify-content-center flex-column ">
+                            <img class="icon d-block  rounded-circle m-1" src="img-show/show-i1.png" alt="Second slide">
+                            <img class="d-block rounded-circle m-1" src="img-show/show-p1.jpg" alt="Second slide">
+                            <div class="show-name m-1">
+                                <p>高粱口味</p>
+                            </div>
+                        </div>
+                        <!-- 一頁內容-stop -->
+
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 產品介紹-computer-stop -->
+
+
+
+
+
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.esm.bundle.js"></script>
         <script>
             function content_botton(conName) {
                 var i;
@@ -417,6 +1192,96 @@
                 document.getElementById(conName).style.display = "block";
             }
         </script>
+        <!-- maketomap -->
+        <script>
+            $(function () {
+                $('#myTab li:last-child a').tab('show')
+            })
+        </script>
+        <script src="swiper-4.4.2/dist/js/swiper.min.js"></script>
+        <!-- Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+
+            $('.carousel').carousel({
+                interval: 2000
+
+            })
+        </script>
+
+        </script>
+       <!-- 產品介紹-computer-ster -->
+
+
+       <script>
+        $(function () {
+            $('#myTab li:last-child a').tab('show')
+        })
+    </script>
+    <script src="swiper-4.4.2/dist/js/swiper.min.js"></script>
+    <!-- Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+
+            // when window width is <= 480px
+            992: {
+                slidesPerView: 1,
+            },
+
+
+            // when window width is <= 640px
+            1171: {
+                slidesPerView: 4,
+            },
+            1350: {
+                slidesPerView: 5,
+            },
+
+            }
+
+        });
+
+        $('.carousel').carousel({
+            interval: 2000
+
+        })
+    </script>
+
+
+
+
 
 </body>
 
