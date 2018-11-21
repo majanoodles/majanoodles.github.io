@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <style>
+        nav.navbar{
+            position: fixed; 
+            width: 100vw;
+            z-index: 99;
+           background-color: antiquewhite;
+        }
+        /* .container{
+            width: 1170px;
+        } */
+
+        .container-fluid{
+            width: 1170px;
+        }
+
+        ul li.nav-item{
+            font-size: 20px;
+        }
+
+        /* .container-fluid{
+            width: 60%;
+        } */
+
+        .navbar-brand{
+            /* margin-left: 20px; */
+
+        }
+        body {
+            position: relative;
+            top: 0px;
+            margin: auto;
+        }
+
+        ul.nav-pills {
+            position: fixed;
+            top: 90px;
+        }
+
+
+        .col-md-9.col-sm-12{
+            top:80px;
+        }
+
+        .flex {
+            display: flex;
+            align-content: start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .goods {
+            width: 150px;
+            /* padding: 20px; */
+            margin:10px;
+
+        }
+
+        .store_img {
+            width: 150px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .goods_name {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .goods_price {
+            float: right;
+            display: inline-block;
+            font-size: 20px;
+
+        }
+        .section{
+            margin-bottom: 500px;
+        }
+        @media screen and (max-width: 1170px) {
+            .container-fluid{
+            width: 100vw;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .container-fluid{
+            width: 375px;
+            }
+
+
+
+            .container {
+                max-width: 768px;
+            }
+            .col-sm-3 {
+                display: none;
+            }
+
+            .goods {
+                width: 80px;
+                /* margin: 10px 40px; */
+                
+            }
+            .goods_name{
+                font-size: 12px;
+                /* margin-right: 10px; */
+                display: block;
+
+               
+            }
+            .goods_price{
+                font-size: 12px; 
+                float: none;
+
+  
+            }
+
+            .store_img {
+                width: 80px;
+                height: 80px;
+        
+            }
+            ul li.nav-item{
+            font-size: 14px;
+            }
+            .section h1{
+                font-size: 14px;    
+            }
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <!-- navbar-stop -->
+    <nav class="navbar navbar-expand-lg navbar-light   ">
+        <div class="container">
+            <!-- href至首頁 -->
+            <a class="navbar-brand" href="#">
+                <!-- scr至logo圖片 -->
+                <img src="img/logo.jpg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <!-- href至文字所指的頁面 -->
+                        <a class="nav-link" href="#">關於馬家</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">麵線製作</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">產品介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">料理美食</a>
+                    </li>
+                    <li class="nav-item dropdown active ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            線上購物<span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu text-center active" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item active" href="#section1">麵線</a>
+                            <a class="dropdown-item" href="#section2">醬料</a>
+                            <a class="dropdown-item" href="#section3">禮盒</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯絡馬家</a>
+                    </li>
+
+                </ul>
+            </div>
+    </nav>
+    </div>
+    <!-- navbar-start -->
+
+    <!-- store-start -->
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+        <!-- <div class="store_all" data-spy="scroll" data-target="#myScrollspy" data-offset="1"> -->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-sm-3 col-4" id="myScrollspy">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#section1">麵線</a>
+                            <a class="nav-link" href="#section2">醬料</a>
+                            <a class="nav-link" href="#section3">伴手禮盒</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-md-9 col-sm-12">
+                    <div id="section1" class="section">
+                        <h1>麵線</h1>
+                        <div class="flex">
+                            <!-- 麵線的圖取名為“store_noodles_p”+ 1至9之數字 ；文件夾名為”img-store“-->
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p1.jpg" alt="photo">
+                                <h5 class="goods_name">原味麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p2.jpg" alt="photo">
+                                <h5 class="goods_name">原味寬麵</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p3.jpg" alt="photo">
+                                <h5 class="goods_name">原味拉麵</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p4.jpg" alt="photo">
+                                <h5 class="goods_name">高粱麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p5.jpg" alt="photo">
+                                <h5 class="goods_name">山藥麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p6.jpg" alt="photo">
+                                <h5 class="goods_name">番茄麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p7.jpg" alt="photo">
+                                <h5 class="goods_name">蔬菜麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p8.jpg" alt="photo">
+                                <h5 class="goods_name">紫地瓜麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_noodles_p9.jpg" alt="photo">
+                                <h5 class="goods_name">南瓜麵線</h5>
+                                <h5 class="goods_price">$160</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 醬料的圖取名為“store_Sauce_p”+ 1至10之數字 ；文件夾名為”img-store“-->
+                    <div id="section2" class="section">
+                        <h1>醬料</h1>
+                        <div class="flex">
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p1.jpg" alt="photo">
+                                <h5 class="goods_name">蓉拌醬</h5>
+                                <h5 class="goods_price">$200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p2.jpg" alt="photo">
+                                <h5 class="goods_name">香辣小魚干</h5>
+                                <h5 class="goods_price">$200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p3.jpg" alt="photo">
+                                <h5 class="goods_name">菩提醬</h5>
+                                <h5 class="goods_price">$200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p4.jpg" alt="photo">
+                                <h5 class="goods_name">古早醬</h5>
+                                <h5 class="goods_price">$200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p5.jpg" alt="photo">
+                                <h5 class="goods_name">蒜香拌醬</h5>
+                                <h5 class="goods_price">$200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p6.jpg" alt="photo">
+                                <h5 class="goods_name">酒釀豆腐乳</h5>
+                                <h5 class="goods_price">$250</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p7.jpg" alt="photo">
+                                <h5 class="goods_name">紅麴豆腐乳</h5>
+                                <h5 class="goods_price">$250</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p8.jpg" alt="photo">
+                                <h5 class="goods_name">麻辣豆腐乳</h5>
+                                <h5 class="goods_price">$250</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p9.jpg" alt="photo">
+                                <h5 class="goods_name">麻辣拌醬</h5>
+                                <h5 class="goods_price">$300</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_Sauce_p10.jpg" alt="photo">
+                                <h5 class="goods_name">XO干貝醬</h5>
+                                <h5 class="goods_price">$800</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 伴手禮盒的圖取名為“store_gift_p”+ 1至2之數字 ；文件夾名為”img-store“-->
+                    <div id="section3" class="section">
+                        <h1>伴手禮盒</h1>
+                        <div class="flex">
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_gift_p1.jpg" alt="photo">
+                                <h5 class="goods_name">XO干貝醬禮盒</h5>
+                                <h5 class="goods_price">$1200</h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="img-store/store_gift_p2.jpg" alt="photo">
+                                <h5 class="goods_name">麵線醬料禮盒</h5>
+                                <h5 class="goods_price">$1000</h5>
+                            </div>
+                            <!-- 占空位的假格子 -->
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                            <div class="goods">
+                                <img class="store_img" src="" alt="">
+                                <h5 class="goods_name"></h5>
+                                <h5 class="goods_price"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            $('body').scrollspy({ target: '#navbar-example' })
+
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh')
+            })
+
+//             $(function(){ 
+// if($(window).width()<480){ //當視窗小於480時才運作
+// $('.navbar a').on('click', function(){
+//     $('.navbar-toggle').click();
+//   });
+// }
+// });$("#collapse").click();
+        </script>
+
+<!-- <script>
+
+</script> -->
+        <!-- store-stop -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
