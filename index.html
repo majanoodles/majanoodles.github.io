@@ -19,7 +19,6 @@
         body{
             margin: 0;
             box-sizing: border-box;
-        
             padding-top: 100px !important;
             background: #eee;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -30,6 +29,13 @@
         html,body {
       position: relative;
       height: 100%;
+    }
+
+    #mar1{
+        position: absolute;
+        padding-top: 50px;
+        width: 100%;
+        height: 10px;
     }
         h1{
             font-family: Microsoft JhengHei;
@@ -52,19 +58,22 @@
         width: 300px;
         height: 60px;
         }
-        #navbar_list{
+        #navbar_list1{
             z-index: 9999;
         }
-        #navbar_list a{
+        #navbar_list1 a{
             font-size: 20px;
             color: rgb(75, 75, 75);
             padding: 5px 10px;
         }
-        #navbar_list a:hover{
+        #navbar_list1 a:hover{
                 background-color: rgba(75, 75, 75, 0.8);
                 color: rgb(255, 245, 233);
                 font-size: 22px;
                 transition: 0.5s;
+            }
+            #navbar_list2{
+                display: none;
             }
 /* BANNER */
         #banner_All {
@@ -528,12 +537,11 @@ height: 40vh;
         transform: translateY(-50%);
         
     }
+    #all_map_computer .map_computer{
+        width: 1170px;
+        margin: 0 auto;
+    }
    
-
-
-
-
-
 @media screen and (max-width: 1170px) {
             .content_all_con {
                 width: 720px;
@@ -575,19 +583,23 @@ height: 40vh;
             #navbar{
                 height: 100px;
             }
-            #navbar_list{
+            #navbar_list1{
+                display: none;
+            }
+            #navbar_list2{
                 position: fixed;
                 top:85px;
                 right: 0;
                 background-color: rgba(255, 245, 233, 0.8);
+                display: block;
             }
-            #navbar_list a{
+            #navbar_list2 a{
                 height: 50px;
                 width: 130px;
                 text-align: center;
                 line-height: 45px;
             }
-            #navbar_list a:hover{
+            #navbar_list2 a:hover{
                 background-color: rgba(75, 75, 75, 0.8);
                 color: rgb(255, 245, 233);
                 font-size: 22px;
@@ -783,7 +795,6 @@ height: 40vh;
 
 
 }
-
         </style>
     <!-- ---conputer-make -->
 
@@ -861,23 +872,36 @@ height: 40vh;
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div id="navbar_all" class="row justify-content-between">
-            <div id="navbar_logo" class="navbar-brand"><img src="/img/nav/logo.png" alt=""></div>
+            <div id="navbar_logo" class="navbar-brand"><img src="/img/nav/logo.png" alt="" href="https://majanoodles.github.io"></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span id="menubutton" class="navbar-toggler-icon align-self-end"></span>
             </button>
             <div class="collapse navbar-collapse row justify-content-end" id="navbarNavAltMarkup">
-                <div id="navbar_list" class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#content_title">關於馬家 <span class="sr-only">(current)</span></a>
+                <div id="navbar_list1" class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#mar1">關於馬家 <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#all_computer_make_t_t">麵線製作</a>
                     <a class="nav-item nav-link" href="#show_t_t_computer">產品介紹</a>
                     <a class="nav-item nav-link" href="#food_t_t">料理美食</a>
                     <a class="nav-item nav-link" href="#map_name_computer">聯絡馬家</a>
-                    <a class="nav-item nav-link disabled" href="#">訂購方式</a>
+                    <a class="nav-item nav-link disabled" href="https://majanoodles.github.io/store">訂購方式</a>
                 </div>
+                <div id="navbar_list2" class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#button_1">關於馬家 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#name_phone_make">麵線製作</a>
+                    <a class="nav-item nav-link" href="#all_show_phone">產品介紹</a>
+                    <a class="nav-item nav-link" href="#all_food_phone">料理美食</a>
+                    <a class="nav-item nav-link" href="#all_map_phone">聯絡馬家</a>
+                    <a class="nav-item nav-link disabled" href="https://majanoodles.github.io/store">訂購方式</a>
+                </div>
+
+
+
             </div>
+
         </div>
     </nav>
+
 
 
 
@@ -901,6 +925,7 @@ height: 40vh;
             </div>
         </div>
     </div>
+    <div id="mar1"></div>
     <!-- CONTENT -->
     <div class="content_all">
         <!-- 1170线 -->
@@ -980,7 +1005,7 @@ height: 40vh;
     <div class="all_maketomap" id="all_maketomap">
         <!-- 麵線製作phone-start -->
         <div class="all_make_phone">
-            <div class="name_phone">麵線製作</div>
+            <div class="name_phone" id="name_phone_make">麵線製作</div>
 
             <div class="row">
                 <div class="t_t" style="width: 160px;padding-left: 15px;padding-right: 0;">
@@ -1045,7 +1070,7 @@ height: 40vh;
         <!-- 麵線製作-phone-stop -->
 
         <!-- 產品介紹-phone-start -->
-        <div class="all_show_phone">
+        <div class="all_show_phone" id="all_show_phone">
             <div class="name_phone" style="margin-bottom: 0;">產品介紹</div>
             <!-- Slider main container -->
             <div class="swiper-container">
@@ -1094,7 +1119,7 @@ height: 40vh;
             <!-- 產品介紹-phone-stop -->
 
             <!-- 料理美食-phone-start -->
-            <div class="all_food_phone">
+            <div class="all_food_phone" id="all_food_phone">
                 <div class="name_phone">料理美食</div>
 
                 <div class="row">
@@ -1164,7 +1189,7 @@ height: 40vh;
             </div>
             <!-- 料理美食-phone-stop-->
             <!-- 聯絡馬家-phone-star -->
-            <div class="all_map_phone">
+            <div class="all_map_phone" id="all_map_phone">
                 <div class="name_phone">聯絡馬家</div>
                 <div class="inf">
                     總　廠：金門縣金寧鄉伯玉路二段159號 <br>
@@ -1489,7 +1514,7 @@ height: 40vh;
                     </div>
                     <div class="tab-pane fade" id="pills-contact4" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <h1 class="food_name_computer">蚵仔麵線</h1>
-                        <img class="" src="img/p4.jpg" alt="phoho">
+                        <img class="food_img" src="img/p4.jpg" alt="phoho">
                         <div class="food_colorbox"></div>
                         <div class="food_detail">
                             材料:海蚵、馬家麵線、芹菜丁<br>
@@ -1558,7 +1583,7 @@ height: 40vh;
         </div>
         <div class="map_computer" src="https://goo.gl/maps/aNWvYDhSnpT2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.3301317012274!2d118.33369200000001!3d24.439329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf37d08f288bace8!2z6aas5a626bq157ea!5e0!3m2!1szh-TW!2stw!4v1542388671922"
-                width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                width="1170px" height="500px" frameborder="0" style="border:0;" allowfullscreen></iframe>
         </div>
 
     </div>
